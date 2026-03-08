@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect, useCallback, useRef } from "react";
+import KeyboardDisplay from "./KeyboardDisplay";
 
 interface TypingPracticeProps {
   text: string;
@@ -130,6 +131,14 @@ export default function TypingPractice({ text, onComplete }: TypingPracticeProps
           <div className="text-2xl font-bold text-red-400">{errors}</div>
         </div>
       </div>
+
+      {/* キーボード表示 */}
+      {!isComplete && (
+        <KeyboardDisplay
+          pressedKey=""
+          nextKey={text[input.length]}
+        />
+      )}
 
       {/* 完了メッセージ */}
       {isComplete && (
