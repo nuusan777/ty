@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import InteractiveKeyboardPractice from "@/components/InteractiveKeyboardPractice";
 
 const sections = [
   {
@@ -375,6 +376,9 @@ const sections = [
             </table>
           </div>
         </div>
+
+        {/* インタラクティブ練習 */}
+        <InteractiveKeyboardPractice />
       </div>
     ),
   },
