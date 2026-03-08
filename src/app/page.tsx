@@ -84,6 +84,38 @@ export default function Home() {
           </div>
         </Link>
 
+        {/* キーボード練習 */}
+        <Link href="/keyboard">
+          <div className="bg-gradient-to-r from-cyan-900/50 to-teal-900/50 rounded-xl p-6 mb-6 border border-cyan-700/50 hover:border-cyan-500 transition-all cursor-pointer group">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-4">
+                <span className="text-4xl">⌨️</span>
+                <div>
+                  <h2 className="text-xl font-bold text-white group-hover:text-cyan-300 transition-colors">
+                    キーボード練習
+                  </h2>
+                  <p className="text-gray-400 text-sm mt-1">
+                    自由にタイピング！押したキーがリアルタイムで表示される練習モード
+                  </p>
+                </div>
+              </div>
+              <svg
+                className="w-6 h-6 text-cyan-500 group-hover:translate-x-1 transition-transform"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </div>
+          </div>
+        </Link>
+
         {/* 概要 */}
         <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 rounded-xl p-6 mb-8 border border-blue-700/50">
           <h2 className="text-xl font-bold text-white mb-3">📚 学習の進め方</h2>
