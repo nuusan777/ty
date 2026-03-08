@@ -42,7 +42,7 @@ const fingerNames: { [key: string]: string } = {
 };
 
 // キーボードレイアウト
-const keyboardLayout = [
+const keyboardLayout: Array<Array<{ key: string; width: string; home?: boolean; label?: string }>> = [
   [
     { key: "1", width: "w-10" },
     { key: "2", width: "w-10" },
